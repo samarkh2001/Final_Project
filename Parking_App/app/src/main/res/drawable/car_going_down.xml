@@ -1,0 +1,38 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="33dp" android:height="42dp" android:viewportWidth="500" android:viewportHeight="500">
+
+    <!-- Car body -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M150,50 L350,50 C375,50 400,75 400,100 L400,400 C400,425 375,450 350,450 L150,450 C125,450 100,425 100,400 L100,100 C100,75 125,50 150,50 Z" />
+
+    <!-- Car windows -->
+    <path
+        android:fillColor="#B0E0E6"
+        android:pathData="M170,120 L330,120 L330,200 L170,200 Z" />
+    <path
+        android:fillColor="#B0E0E6"
+        android:pathData="M170,300 L330,300 L330,380 L170,380 Z" />
+
+    <!-- Car wheels -->
+    <path
+        android:fillColor="#404040"
+        android:pathData="M120,90 A30,30 0 1,1 120,91 Z" />
+    <path
+        android:fillColor="#404040"
+        android:pathData="M120,410 A30,30 0 1,1 120,411 Z" />
+    <path
+        android:fillColor="#404040"
+        android:pathData="M380,90 A30,30 0 1,1 380,91 Z" />
+    <path
+        android:fillColor="#404040"
+        android:pathData="M380,410 A30,30 0 1,1 380,411 Z" />
+
+    <!-- Car details: headlights and taillights -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M200,40 L300,40 L290,60 L210,60 Z" />
+    <path
+        android:fillColor="#FF4500"
+        android:pathData="M200,460 L300,460 L290,440 L210,440 Z" />
+
+</vector>

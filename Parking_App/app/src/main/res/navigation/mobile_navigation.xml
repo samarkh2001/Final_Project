@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_park_selection">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.parking.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_park_selection"
+        android:name="com.example.parking.ui.parking.ParkSelectionFragment"
+        android:label="@string/title_park_selection"
+        tools:layout="@layout/fragment_park_selection">
+        <action
+            android:id="@+id/from_park_selection_to_simulator"
+            app:destination="@id/navigation_parking_simulator"
+            />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_parking_simulator"
+        android:name="com.example.parking.ui.parking.ParkingSimulatorFragment"
+        android:label="@string/parking_simulator"
+        tools:layout="@layout/fragment_parking_simulator">
+        <action
+            android:id="@+id/from_simulator_to_selection"
+            app:destination="@id/navigation_park_selection"/>
+        <action
+            android:id="@+id/refresh_simulator"
+            app:destination="@id/navigation_parking_simulator"/>
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_management"
+        android:name="com.example.parking.ui.management.ManagementFragment"
+        android:label="Management"
+        tools:layout="@layout/fragment_management">
+        <action
+            android:id="@+id/from_management_to_signup"
+            app:destination="@id/navigation_signup" />
+        <action
+            android:id="@+id/from_management_to_login"
+            app:destination="@id/navigation_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_login"
+        android:name="com.example.parking.ui.management.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/from_login_to_management"
+            app:destination="@id/navigation_management" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_signup"
+        android:name="com.example.parking.ui.management.SignupFragment"
+        android:label="Signup"
+        tools:layout="@layout/fragment_signup">
+    </fragment>
+
+</navigation>

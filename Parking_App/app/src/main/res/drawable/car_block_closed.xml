@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F90000" /> <!-- The color of the vertical line -->
+    <size android:width="1dp" /> <!-- The thickness of the vertical line -->
+    <stroke
+        android:width="1dp"
+        android:color="#000000" />
+</shape>

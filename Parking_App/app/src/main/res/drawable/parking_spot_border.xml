@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color of the parking spot -->
+    <solid android:color="#FFFFFF" /> <!-- White background (can be transparent) -->
+
+    <!-- Border -->
+    <stroke
+        android:width="2dp"
+        android:color="#000000" /> <!-- Black border color -->
+
+    <!-- Rounded corners (optional) -->
+    <corners android:radius="4dp" /> <!-- Adjust radius for rounder corners -->
+</shape>
